@@ -319,12 +319,6 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `role_id`, `username`, `email`, `password`, `first_name`, `last_name`, `is_active`, `group_number`, `created_at`, `updated_at`, `subject_id`) VALUES
-(1, 2, 'VafaBaghirova', NULL, 'vafa1998', NULL, NULL, 1, NULL, '2025-12-04 20:44:04', '2025-12-05 17:03:49', NULL),
-(2, 1, 'admin', 'admin', 'admin', NULL, NULL, 1, NULL, '2025-12-04 20:44:04', '2025-12-05 17:03:49', NULL),
-(3, 3, 'Murad', 'murad', 'murad', NULL, NULL, 1, '232King', '2025-12-04 20:44:04', '2025-12-05 17:03:49', NULL),
-(4, 2, 'Test', 'Test@teacher.local', 'testtest', 'Teacher', 'Test', 1, NULL, '2025-12-05 17:32:40', '2025-12-05 17:32:40', NULL),
-(8, 3, 'farid', 'farid@student.local', 'farid', 'Student', 'farid', 1, '232ITing', '2025-12-05 17:37:37', '2025-12-05 17:37:37', 5);
 
 --
 -- Indexes for dumped tables
