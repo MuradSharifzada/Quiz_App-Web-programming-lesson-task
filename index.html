@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster | Education Management System</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray background */
+        }
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6
+             100%);
+        }
+        .card {
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation (Simple) -->
+    <nav class="p-4 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">QuizMaster</div>
+            <a href="login.php" class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition duration-300 shadow-md">
+                Login
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-white py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-6xl font-extrabold mb-4">
+                The Central Hub for Digital Education
+            </h1>
+            <p class="text-xl sm:text-2xl mb-8 opacity-90">
+                Manage subjects, create exams, and track student performance with ease.
+            </p>
+            <a href="login.php" class="inline-block px-10 py-4 text-lg bg-yellow-400 text-gray-900 font-bold rounded-full shadow-lg hover:bg-yellow-500 transition duration-300 transform hover:scale-105">
+                Get Started
+            </a>
+        </div>
+    </header>
+
+    <!-- Role Cards Section -->
+    <section class="py-16 bg-f0f4f8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Who Are You?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Admin Card -->
+                <div class="card bg-white p-6 rounded-xl shadow-xl border-t-4 border-red-500">
+                    <div class="text-4xl text-red-500 mb-4">⚙️</div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Administrator</h3>
+                    <p class="text-gray-600 mb-4">
+                        System-wide management: Create users, assign subjects to teachers, and monitor overall performance.
+                    </p>
+                    <a href="login.php" class="text-red-500 font-medium hover:text-red-700">Access Admin Login &rarr;</a>
+                </div>
+
+                <!-- Teacher Card -->
+                <div class="card bg-white p-6 rounded-xl shadow-xl border-t-4 border-green-500">
+                    <div class="text-4xl text-green-500 mb-4">👩‍🏫</div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Teacher</h3>
+                    <p class="text-gray-600 mb-4">
+                        Subject management: Create exams (quizzes/colloquiums), add questions, and view student results.
+                    </p>
+                    <a href="login.php" class="text-green-500 font-medium hover:text-green-700">Access Teacher Login &rarr;</a>
+                </div>
+
+                <!-- Student Card -->
+                <div class="card bg-white p-6 rounded-xl shadow-xl border-t-4 border-blue-500">
+                    <div class="text-4xl text-blue-500 mb-4">🎓</div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Student</h3>
+                    <p class="text-gray-600 mb-4">
+                        Exam participation: View assigned exams, take quizzes, and review personal performance results.
+                    </p>
+                    <a href="login.php" class="text-blue-500 font-medium hover:text-blue-700">Access Student Login &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 QuizMaster. All rights reserved. | <a href="login.php" class="underline hover:text-blue-400">Login</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
